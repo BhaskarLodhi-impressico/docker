@@ -1,0 +1,15 @@
+version: '2.1'
+services:
+  webserver1:
+    image: bhaskar9997/web1:latest
+    container_name: website1
+    restart: unless-stopped
+    ports:
+      - "80:80"
+
+  webserver2:
+    image: bhaskar9997/web2:latest
+    container_name: website2
+    restart: unless-stopped
+    ports:
+      - "8080:80"    
